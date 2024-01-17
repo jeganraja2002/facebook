@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body style="background-color:#7b70b52b;">
+	
+<header style="background-color:white; z-index: 2;" class="position-sticky top-0">
+	 
+	<div class="row align-items-center py-1 mx-0">
+	
+		<div class="col-lg-3">
+			<div class="d-flex align-items-center justify-content-around">
+				<img src="img/facebook.png">
+				<div class="p-2 rounded-pill" style="background:#575a7a1c;">
+					<i class="bi bi-search"></i>
+					<input type="text" name="" placeholder="search facebook" class="input-outline1">
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="col-lg-6 my-3 my-lg-0">
+			<div class="d-flex align-items-center justify-content-evenly">
+				<i class="bi bi-house-door fs-2 home-page-color-gray"></i>
+				<i class="bi bi-tv fs-2 home-page-color-gray"></i>
+				<i class="bi bi-people fs-2 home-page-color-gray"></i>
+				<i class="bi bi-controller fs-2 home-page-color-gray"></i>
+			</div>
+		</div>
+	  
+		<div class="col-lg-3 d-none d-lg-block">
+			<div class="d-flex justify-content-end">
+				<i class="bi bi-list fs-4 home-page-color-icons mx-1 mt-1"></i>
+				<i class="bi bi-chat-dots fs-4 home-page-color-icons mx-1 mt-1"></i>
+				<i class="bi bi-bell fs-4 home-page-color-icons mx-1 mt-1"></i>
+				<img src="img/profile1.png" class="px-1">
+			</div>
+			
+		</div>
+	</div>
+</header>
+
+
+
+	<div class="row mx-0">
+
+		<div class="col-lg-4 d-none d-lg-block">
+				<ul class="px-0 home-page-position">
+					<li class="list-unstyled mt-2 over"><img src="img/profile.png"><span class="fw-bold"> profile<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/friends.png"><span class="fw-bold"> friends<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/watch.png"><span class="fw-bold"> watch<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/radio.png"><span class="fw-bold"> Group<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/group.png"><span class="fw-bold"> Feeds<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/memories.png"><span class="fw-bold"> Memories<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/save.png"><span class="fw-bold"> Saved<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/flag.png"><span class="fw-bold"> Pages<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/event.png"><span class="fw-bold"> Events<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/increase.png"><span class="fw-bold"> Ads manager<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/event.png"><span class="fw-bold"> Ad centre<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/globel.png"><span class="fw-bold"> Climate Science Center<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/arrow.png"><span class="fw-bold"> Crisis response<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/heart.png"><span class="fw-bold"> Fundraisers<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/bad.png"><span class="fw-bold"> Gaming video<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/live.png"><span class="fw-bold"> Live videos<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/messages.png"><span class="fw-bold"> messages<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/playgames.png"><span class="fw-bold"> Play games<span></li>
+					<li class="list-unstyled mt-2 over"><img src="img/activity.png"><span class="fw-bold"> Recent ad activity<span></li>
+				</ul>
+		</div>
+
+
+
+
+	<div class="col-lg-4 mt-2 col-12">
+	   <form id="form">
+	     
+	     <div style="background-color:white;" class="p-3 rounded text-center shadow">
+	    		<div class="borderd d-flex">
+	    			<img src="img/profile1.png">
+	    			<input type="text" placeholder="what's on your mind" class="w-100 rounded-pill border-0 bg-light px-3 input-outline2" id="input">
+	    		</div>
+				<button type="submit" class="mt-3 input-outline1 bg-primary rounded-pill px-4 py-2 text-light"><span id="replace"></span></button>
+		</div>
+	  </form>
+		<div id="content"></div>
+
+	  	  <div  id="block" class="display-none-button px-3 py-1 mt-3 rounded shadow-lg" style="background:white;">
+	  			<div class="d-flex justify-content-between mt-3">
+	  				<i class="bi bi-pencil-square fs-4 drop-shadow-icons text-primary" style="cursor:pointer;" onclick="pedit(this)"></i>
+	  				<div class="fs-4 drop-shadow-icons"><span id="time"></span></div>
+	  				<i class="bi bi-x-square fs-4 drop-shadow-icons text-primary" style="cursor:pointer;" onclick="dele(this)"></i>
+	  			</div>
+	  				<div><img src="img/person/lilly.jpeg" class="w-100 my-3 rounded imgchange"></div>
+	  			<div class="d-flex justify-content-between">
+	 				<i class="bi bi-hand-thumbs-up  fs-4 drop-shadow-icons text-primary"  style="cursor: pointer;" onclick="like(this)"><span id="count" class="text-dark"> Like</span></i>
+					<i class="bi bi-chat-dots fs-4 drop-shadow-icons text-primary" style="cursor:pointer;" onclick="comments(this)"><span class="text-dark"> Comment</span></i>
+ 					<i class="bi bi-share  fs-4 drop-shadow-icons text-primary" style="cursor: pointer;" onclick="share(this)"><span class="text-dark"> Share</span></i>
+	  			</div>
+		 		
+		 		<div id="commentcontent" class="d-none">
+		 			<div class="text-center">
+						<input type="text" class="w-100 mt-3 px-2 py-3 border-1 border-primary input-outline rounded" placeholder="comments....." id="input1">
+						<button type="submit" class="mt-3 border-0 px-3 py-2 bg-primary text-light rounded" onclick="commentspost(this)">post</button>
+					</div>
+		 				<div id="inputtype"></div>
+		 		</div>
+		 </div>	  
+	  
+
+
+		 <div class="modals" tabindex="-1" id="prompt">
+		  <div class="modal-dialog">
+		    <div class="modal-content border-0 shadow-lg">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Modal title</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="klose(this)"></button>
+		      </div>
+		      <div class="modal-body">
+		        <p>Modal body text goes here.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="klose(this)">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+
+
+
+	
+	</div>
+
+
+    <div class="col-lg-4 d-none d-lg-block">
+		<div class=" d-flex justify-content-center ">
+			<ul class="list-unstyled mx-0 home-page-position mt-2">
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person1.png"><span class="fw-bold"> shanker</span></li>
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person2.png"><span class="fw-bold"> guru</span></li>
+				<li class="py-1 px-2"><img src="img/person/person3.png"><span class="fw-bold"> jaga</span></li> 
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person4.png"><span class="fw-bold"> chinrau</span></li>
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person5.png"><span class="fw-bold"> karthi</span></li>
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person6.png"><span class="fw-bold"> king</span></li>
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person7.png"><span class="fw-bold"> arumugam</span></li>
+				<li class="py-1 px-2"><img src="img/person/person8.png"><span class="fw-bold"> trisha</span></li>
+				<li class="py-1 px-2"><img src="img/person/person9.png"><span class="fw-bold"> nayanthara</span></li>
+				<li class="py-1"><img src="img/person/dot.png"><img src="img/person/person10.png"><span class="fw-bold"> paul raj</span></li>
+				<li class="py-1 px-2"><img src="img/person/person11.png"><span class="fw-bold"> mr.beast</span></li>            
+				<li class="py-1 px-2"><img src="img/person/person12.png"><span class="fw-bold"> kalidas</span></li>
+			</ul>
+		</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/home.js"></script>
+</body>

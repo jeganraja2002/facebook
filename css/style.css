@@ -1,0 +1,87 @@
+*{	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Pridi', serif;}
+	
+.input-outline{
+		outline:none;
+		border:1px solid #80808066;
+		}
+				
+.bg-select{background-color:white;}
+
+.size-font{
+	font-size:11px;
+	color:gray;
+	}
+	
+	
+	
+/* .................................................home-page...................................... */
+
+
+.input-outline1{
+		outline:none;
+		border:0px solid #80808066;
+		background-color:transparent;
+		}
+
+.input-outline2:focus{
+				
+				outline: 1px solid blue;
+				}
+
+.home-page-color-gray{
+				color: gray;
+
+			}
+.home-page-color-icons{
+				background-color: #8080802e;
+				display: inline-block;
+				width: 40px !important;
+				text-align: center;
+				height: 40px;
+				border-radius: 50px;
+				line-height: 40px;
+				color: black;
+				}
+
+.home-page-position{position: fixed;}
+
+.over{
+	overflow: auto;
+}
+
+.display-none-button{display: none;}
+
+.modals{
+		position: fixed;
+		bottom:-25px;
+		right: -430px;
+		z-index: 3;
+		width: 100%;
+		display: none;}
+
+.drop-shadow-icons{
+				filter: drop-shadow(1px 1px 5px blue);
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
